@@ -1,0 +1,101 @@
+body {
+    background-color: cornsilk;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.panel {
+    position: absolute;
+    background-color: blanchedalmond;
+    border: solid burlywood;
+    -webkit-box-shadow: 7px 5px 15px 3px black;
+    box-shadow: 7px 5px 15px 3px black;
+    z-index: 1;
+}
+
+
+.header {
+    left: 50%;
+    top: 2%;
+    height: 70px;
+    width: 300px;
+    margin-left: -120px;
+    text-align: center;
+
+}
+
+.header-text {
+    font-size: 30px;
+    font-weight: bold;
+    width: 100%; 
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 52%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.footer {
+    left: 50%;
+    top: 87%;
+    height: 70px;
+    width: 300px;
+    margin-left: -120px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.footer button {
+    margin-left: 12px;
+    margin-top: 10px;
+    width: 130px;
+    height: 50px;
+    background-color: white;
+    font-size: 20px;
+    -webkit-box-shadow: 3px 5px 10px 2px black;
+    box-shadow: 3px 5px 10px 2px black;
+    border: 5px solid bisque;
+    font-weight: bold;
+
+}
+
+.footer button:hover{
+    background-color: rgba(139, 72, 35, 0.534);
+}
+
+.gameBoard {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    padding: 15px;
+    width: 520px;
+    position: absolute;
+    left: 50%;
+    margin-left: -250px;
+    top: 10%;
+    background-color: antiquewhite;
+    border: 8px solid burlywood;
+    border-radius: 10%;
+    -webkit-box-shadow: 7px 5px 15px 3px black;
+    box-shadow: 7px 5px 15px 3px black;
+}
+
+.gameCircle {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    border-radius: 50%;
+    border: 5px solid black;
+}
+
+.player0 {
+    background-color: white;
+}
+
+.player1 {
+    background-color: rgb(201, 174, 150);
+}
+
+.player2 {
+    background-color: pink;
+}
